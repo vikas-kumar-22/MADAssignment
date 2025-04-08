@@ -1,5 +1,6 @@
 package com.example.ques2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ThemeHelper.applyTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -33,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
         convertButton = findViewById(R.id.convertButton);
         clearButton = findViewById(R.id.clearButton);
         resultText = findViewById(R.id.resultText);
+
+        Button settingsButton = findViewById(R.id.settingsButton);
+        settingsButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(intent);
+        });
+
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, units);
         fromUnit.setAdapter(adapter);
@@ -86,3 +95,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+

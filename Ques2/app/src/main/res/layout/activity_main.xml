@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -14,7 +15,7 @@
         android:paddingBottom="16dp"
         android:textColor="#000"/>
 
-    <!-- FROM SECTION -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,7 +43,7 @@
             android:minHeight="48dp" />
     </LinearLayout>
 
-    <!-- TO SECTION -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,7 +70,7 @@
             android:minHeight="48dp" />
     </LinearLayout>
 
-    <!-- CONVERT + CLEAR -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -77,17 +78,27 @@
         android:gravity="end">
 
         <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:layout_marginEnd="50dp" />
+
+        <Button
             android:id="@+id/clearButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Clear"
-            android:layout_marginEnd="8dp"/>
+            android:layout_marginEnd="8dp"
+            tools:ignore="RtlHardcoded" />
 
         <Button
             android:id="@+id/convertButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Convert"/>
+
+
     </LinearLayout>
 
 </LinearLayout>
