@@ -14,7 +14,6 @@
         android:paddingBottom="16dp"
         android:textColor="#000"/>
 
-    <!-- FROM SECTION -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,7 +41,6 @@
             android:minHeight="48dp" />
     </LinearLayout>
 
-    <!-- TO SECTION -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -68,8 +66,7 @@
             android:layout_marginStart="12dp"
             android:minHeight="48dp" />
     </LinearLayout>
-
-    <!-- CONVERT + CLEAR -->
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
